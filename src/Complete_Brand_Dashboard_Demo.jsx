@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { 
-  Shield, CheckCircle, Search, Filter, Calendar, Package, 
+import {
+  Shield, CheckCircle, Search, Filter, Calendar, Package,
   Building2, AlertTriangle, Download, Eye, TrendingUp, Users,
   ChevronDown, ChevronUp, Truck, Clock, ShoppingCart, AlertCircle,
   MapPin, BarChart3, RefreshCw, CheckSquare, XCircle, Beaker,
@@ -8,6 +8,7 @@ import {
   TestTube, DollarSign, Flame, Phone, Mail, User, Gift, Megaphone, Tag,
   X, Share2, Leaf, Lock, Activity
 } from 'lucide-react';
+import LabTestingTab from './Lab_Testing_Tab';
 
 export default function CompleteBrandDashboardDemo() {
   // Navigation & View State
@@ -1580,12 +1581,7 @@ export default function CompleteBrandDashboardDemo() {
         {/* TO BE CONTINUED - File is getting very long. The remaining tabs (Lab Testing, Inventory, Reorder Planning, Aging & Expiration) would follow the same pattern with their content from the individual tab files */}
         
         {activeTab === 'lab-testing' && (
-          <div className="text-center py-16">
-            <TestTube className="mx-auto text-purple-600 mb-4" size={64} />
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Lab Testing Tab</h3>
-            <p className="text-gray-600 mb-4">Full content from Lab_Testing_Tab.jsx would be here</p>
-            <p className="text-sm text-gray-500">For the complete version, refer to the standalone Lab_Testing_Tab.jsx file</p>
-          </div>
+          <LabTestingTab />
         )}
 
         {activeTab === 'inventory' && (

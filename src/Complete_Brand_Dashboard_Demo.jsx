@@ -9,6 +9,8 @@ import {
   X, Share2, Leaf, Lock, Activity
 } from 'lucide-react';
 import LabTestingTab from './Lab_Testing_Tab';
+import ReorderPlanningDemo from './Reorder_Planning_Demo';
+import AgingExpirationTab from './Aging_Expiration_Tab';
 
 export default function CompleteBrandDashboardDemo() {
   // Navigation & View State
@@ -1726,21 +1728,11 @@ export default function CompleteBrandDashboardDemo() {
         )}
 
         {activeTab === 'reorder-planning' && (
-          <div className="text-center py-16">
-            <Target className="mx-auto text-blue-600 mb-4" size={64} />
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Reorder Planning Tab</h3>
-            <p className="text-gray-600 mb-4">Full content from Reorder_Planning_Demo.jsx would be here</p>
-            <p className="text-sm text-gray-500">For the complete version, refer to the standalone Reorder_Planning_Demo.jsx file</p>
-          </div>
+          <ReorderPlanningDemo />
         )}
 
         {activeTab === 'aging-expiration' && (
-          <div className="text-center py-16">
-            <Flame className="mx-auto text-orange-600 mb-4" size={64} />
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Aging & Expiration Tab</h3>
-            <p className="text-gray-600 mb-4">Full content from Aging_Expiration_Tab.jsx would be here</p>
-            <p className="text-sm text-gray-500">For the complete version, refer to the standalone Aging_Expiration_Tab.jsx file</p>
-          </div>
+          <AgingExpirationTab />
         )}
       </div>
     </div>

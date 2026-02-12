@@ -1,25 +1,7 @@
-import { useState } from 'react'
-import './App.css'
+import CompleteBrandDashboardDemo from './Complete_Brand_Dashboard_Demo'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <h1>OpenLeaf Demo</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Demo content here
-      </p>
-    </>
-  )
+  return <CompleteBrandDashboardDemo />
 }
 
 export default App
